@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Organizi</string>
+
+    <string name="WELCOME">WELCOME</string>
+    <string name="myname"> Ameni Elhassen </string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="or">OR CONNECT WITH</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot">Forgot password ?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="name">Name</string>
+    <string name="ok">OK</string>
+
+
+</resources>
