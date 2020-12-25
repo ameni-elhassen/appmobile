@@ -58,14 +58,15 @@ tools:context=".createvent">
         android:layout_height="16dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="52dp"
         android:background="#807B7A"
         android:ems="10"
         android:hint="Name"
         android:inputType="text"
         android:textColorHint="#FFFFFFFF"
         android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/org"
         tools:ignore="MissingConstraints" />
@@ -76,7 +77,6 @@ tools:context=".createvent">
         android:layout_height="16dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:background="#807B7A"
         android:ems="10"
@@ -84,6 +84,7 @@ tools:context=".createvent">
         android:inputType="date"
         android:textColorHint="#FFFFFFFF"
         android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eventname" />
 
@@ -93,7 +94,6 @@ tools:context=".createvent">
         android:layout_height="16dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:background="#807B7A"
         android:ems="10"
@@ -101,50 +101,80 @@ tools:context=".createvent">
         android:inputType="time"
         android:textColorHint="#FFFFFFFF"
         android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eventdate" />
 
+
     <EditText
         android:id="@+id/eventdescription"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_width="296dp"
+        android:layout_height="84dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:background="#807B7A"
         android:ems="10"
         android:hint="Description"
         android:inputType="text"
         android:textColorHint="#FFFFFFFF"
         android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eventtime" />
 
+
+    <ImageView
+        android:id="@+id/viewevent"
+        android:layout_width="105dp"
+        android:layout_height="142dp"
+
+        android:layout_marginTop="12dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventdescription" />
+
+    <Button
+        android:id="@+id/eventpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@null"
+        android:text="ADD a picture "
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/eventdescription" />
 
     <ImageView
         android:id="@+id/logo1"
         android:layout_width="168dp"
         android:layout_height="163dp"
 
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/logo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eventdescription" />
+        app:layout_constraintTop_toBottomOf="@+id/add" />
 
     <Button
         android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="4dp"
         android:background="@null"
-        android:text="SUBMIT "
+        android:text="ADD "
         android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eventdescription"
+        app:layout_constraintTop_toBottomOf="@+id/eventpic"
         tools:ignore="MissingConstraints" />
 
     <Button

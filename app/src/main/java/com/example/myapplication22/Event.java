@@ -41,6 +41,7 @@ public void onDataChange( DataSnapshot dataSnapshot) {
         recyclerView.setAdapter(adapter);
         }
 
+
 @Override
 public void onCancelled( DatabaseError databaseError) {
         Toast.makeText(Event.this, "Something is wrong", Toast.LENGTH_SHORT).show();

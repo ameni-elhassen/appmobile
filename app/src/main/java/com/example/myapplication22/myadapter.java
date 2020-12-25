@@ -3,10 +3,14 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
+import com.squareup.picasso.Picasso;
+import de.hdodenhof.circleimageview.CircleImageView;
+import com.bumptech.glide.Glide;
 
 
 public class myadapter extends RecyclerView.Adapter <myadapter.myviewholder> {
@@ -31,6 +35,8 @@ public class myadapter extends RecyclerView.Adapter <myadapter.myviewholder> {
         holder.date2.setText(NewEvents.get(position).getNeweventdate());
         holder.time2.setText(NewEvents.get(position).getNeweventtime());
         holder.description2.setText(NewEvents.get(position).getNeweventdescription());
+        Picasso.get().load(NewEvents.get(position).getNeweventpic()).into(holder.im1);
+        Glide.with(holder.im1.getContext()).load(NewEvents.get(position).getNeweventpic()).into(holder.im1);
 
 
     }
@@ -43,6 +49,7 @@ public class myadapter extends RecyclerView.Adapter <myadapter.myviewholder> {
     {
 
         TextView name1,time2,date2,description2;
+        CircleImageView im1;
 
         public myviewholder(@NonNull View itemView)
         {
@@ -52,9 +59,11 @@ public class myadapter extends RecyclerView.Adapter <myadapter.myviewholder> {
             date2=(TextView)itemView.findViewById(R.id.datef);
             time2=(TextView)itemView.findViewById(R.id.timef);
             description2=(TextView)itemView.findViewById(R.id.despc);
+            im1=( CircleImageView)itemView.findViewById((R.id.imevt));
         }
     }
 }
+
 
 
 

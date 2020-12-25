@@ -5,12 +5,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="5dp"
     android:elevation="5dp"
+
     app:cardUseCompatPadding="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp">
+        android:layout_height="292dp"
+        android:padding="15dp"
+        android:background="@color/background_color">
 
 
 
@@ -21,21 +23,36 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="This is Event Name"
-            android:textColor="#000"
+            android:textColor="@color/white"
             android:textSize="25sp"
 
             android:textStyle="bold" />
 
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imevt"
+            android:layout_width="121dp"
+
+            android:layout_height="122dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="162dp"
+            android:layout_marginEnd="166dp"
+            android:layout_marginBottom="124dp" />
+
         <TextView
             android:id="@+id/datef"
-            android:layout_width="match_parent"
+            android:layout_width="359dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/namevent"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="105dp"
+            android:layout_marginTop="192dp"
 
             android:text="Event Date"
-            android:textColor="#000"
+
+            android:textColor="@color/white"
             android:textSize="25sp" />
 
         <TextView
@@ -44,9 +61,11 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/datef"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="-102dp"
+
             android:text="Event Time "
 
-            android:textColor="#000"
+            android:textColor="@color/white"
             android:textSize="25sp" />
 
         <TextView
@@ -58,7 +77,8 @@
             android:layout_marginTop="4dp"
 
             android:text="Event description "
-            android:textColor="#000"
+
+            android:textColor="@color/white"
             android:textSize="25sp" />
 
 
